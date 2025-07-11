@@ -2,6 +2,21 @@ local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 local act = wezterm.action
 
+function get_appearance()
+	if wezterm.gui then
+		return wezterm.gui.get_appearance()
+	end
+	return "Dark"
+end
+
+function scheme_for_appearance(appearance)
+	if appearance:find("Dark") then
+		return "Builtin Solarized Dark"
+	else
+		return "Builtin Solarized Light"
+	end
+end
+
 config.font = wezterm.font({
 	family = "JetBrains Mono",
 	weight = "Medium",
@@ -26,5 +41,8 @@ config.audible_bell = "Disabled"
 config.enable_scroll_bar = true
 config.scrollback_lines = 100000
 config.enable_kitty_keyboard = true
+
+-- Theme
+config.color_scheme = scheme_for_appearance(get_appearance())
 
 return config
