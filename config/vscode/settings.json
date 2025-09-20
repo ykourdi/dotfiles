@@ -3,8 +3,10 @@
     "window.title": "${folderPath} ${separator} ${activeEditorShort}",
     "breadcrumbs.enabled": true,
     "terminal.integrated.sendKeybindingsToShell": true,
+
     "workbench.tree.renderIndentGuides": "always",
     "workbench.tree.indent": 10,
+
     "editor.fontSize": 12,
     "editor.fontFamily": "Fira Code",
     "editor.fontLigatures": true,
@@ -29,11 +31,14 @@
     },
     "editor.parameterHints.enabled": true,
     "editor.hover.enabled": true,
+
+
     "workbench.quickOpen.closeOnFocusLost": false,
     "workbench.editor.enablePreview": false,
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.editor.tabSizing": "fit",
     "workbench.editor.wrapTabs": true,
+
     "search.useGlobalIgnoreFiles": true,
     "search.exclude": {
         "**/node_modules": true,
@@ -43,11 +48,15 @@
         "**/build": true,
         "**/out": true
     },
+
     "explorer.autoReveal": true,
     "explorer.confirmDragAndDrop": false,
     "explorer.confirmDelete": false,
     "explorer.compactFolders": false,
+
+
     "files.trimTrailingWhitespace": true,
     "editor.mouseWheelZoom": true,
-    "workbench.colorTheme": "Default High Contrast Light"
+    "workbench.colorTheme": "Default High Contrast Light",
+    "chat.disableAIFeatures": true
 }
